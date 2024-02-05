@@ -23,45 +23,60 @@
 
                 <div class="mb-3">
                     <input type="text" id="disabledTextInput" class="form-control alert alert-danger fw-bold"
-                    placeholder="Some fields are missing">
+                        placeholder="Some fields are missing">
                 </div>
             </fieldset>
         </form>
-        <!--First three rows-->
-        <div>
-            <div class="d-flex">
-        <!--Card number-->
-                <div class="p-2 flex-fill">
-                    <div>
-                        <label for="Card#">Card #</label>
-                    </div>
-                    <div>
-                        <input type="text" inputmode="numeric" name="Card#" placeholder="XXXXXXXXXX">
-                    </div>
+
+        <!-- First three rows 2.0-->
+        <!-- Card #-->
+        <div class="row g-3">
+            <div class="col-sm-5">
+                <div>
+                    <label for="Card#">Card #</label>
                 </div>
-         <!--CVC number-->
-         <div class="p-2 flex-fill">
-            <div>
-                <label for="Card#">CVC#</label>
+                <div>
+                    <input type="text" inputmode="numeric" name="Card#" placeholder="XXXXXXXXXX">
+                </div>
             </div>
-            <div>
-                <input type="text" inputmode="numeric" name="CVC#" placeholder="0000">
+            <!-- CVC #-->
+            <div class="col-sm-3">
+                <div>
+                    <label for="Card#">CVC#</label>
+                </div>
+                <div>
+                    <input type="text" inputmode="numeric" name="CVC#" placeholder="0000">
+                </div>
+            </div>
+            <!-- Amount-->
+            <div class="col-sm-4">
+                <div>
+                    <label for="Card#">Amount</label>
+                </div>
+
+                <div>
+                    <p> $ <input type="text" inputmode="numeric name=" Amount" placeholder="Amount"></p>
+                </div>
             </div>
         </div>
-        <!--Amount-->
-        <div class="p-2 flex-fill">
-        
-            <div>
-                <label for="Card#">Amount</label>
-            </div>
-            <div>
-                <p> $ <input type="text" inputmode="numeric name="Amount" placeholder="Amount"></p> 
-            </div>
-        </div> 
 
 
-              </div>
+        <!--Father div-->
+        <div>
+            <!--Son Left div-->
+            <div>
+
+            </div>
+
+
+            <!--Son Right div-->
+
+            <div>
+
+            </div>
         </div>
+
+
     </div>
 
 
