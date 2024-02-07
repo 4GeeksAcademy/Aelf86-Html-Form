@@ -21,156 +21,161 @@
         <div>
             <h1>Payment form example</h1>
         </div>
-        <!-- Fieldset-->
-        <form>
-            <fieldset>
 
-                <div class="mb-3">
-                    <input type="text" id="disabledTextInput" class="form-control alert alert-danger fw-bold"
-                        placeholder="Some fields are missing">
-                </div>
-            </fieldset>
-        </form>
-
-        <!-- First three rows 2.0-->
-        <!-- Card #-->
-        <div class="container row g-3">
-            <div class="col-sm-5">
-                <div>
-                    <label for="Card#">Card #</label>
-                </div>
-                <div>
-                    <input type="text" inputmode="numeric" name="Card#" placeholder="XXXXXXXXXX">
-                </div>
-            </div>
-            <!-- CVC #-->
-            <div class="col-sm-3">
-                <div>
-                    <label for="Card#">CVC#</label>
-                </div>
-                <div>
-                    <input type="text" inputmode="numeric" name="CVC#" placeholder="0000">
-                </div>
-            </div>
-            <!-- Amount-->
-            <div class="col-sm-4">
-                <div>
-                    <label for="Card#">Amount</label>
-                </div>
-
-                <div>
-                    <p> $ <input type="text" inputmode="numeric name=" Amount" placeholder="Amount"></p>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Father div-->
+        <!-- Segunda caja-->
         <div>
-            <!--Son Left div-->
-            <div class="row">
-                <div class="mb-3 col-2">
-                    <label for="formGroupExampleInput" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-                </div>
-                <div class="mb-3 col-2">
-                    <label for="formGroupExampleInput2" class="form-label">City</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                </div>
-            </div>
-            <!-- Son Left div Payment method-->
-            <!-- Mastercard-->
-            <div class="form-check form-check-inline">
-                <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+            <form>
+                <fieldset>
 
-            </div>
-            <!-- Payment Visa-->
-            <div class="form-check form-check-inline">
-                <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
-            </div>
-            <!-- Payment Diners Club-->
-            <div class="form-check form-check-inline">
-                <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
-            </div>
-
-            <!-- Payment Paypal-->
-
-            <div class="form-check form-check-inline">
-                <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-paypal"></i></label>
-            </div>
-            <!--Son Right div-->
-
-            <div class="row">
-                <div class="mb-3 col-2">
-                    <label for="formGroupExampleInput" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-                </div>
-
-                <!--Son Right div second line-->
-
-                <div class="row">
-                    <div class="mb-3 col-2 class="d-flex justify-content-end">
-                        <!--Select input-->
-                        <p>State</p>
-                        <select class="form-select inline" aria-label="Default select example">
-
-                            <option selected>Pick a state</option>
-                            <option value="1">Distrito Capital</option>
-                            <option value="2">Anzoategui</option>
-                            <option value="3">Sucre</option>
-                        </select>
+                    <div class="mb-3">
+                        <input type="text" id="disabledTextInput" class="form-control alert alert-danger fw-bold"
+                            placeholder="Some fields are missing">
                     </div>
-                    <!--Regular Input-->
-                    <div class="mb-3 col-2">
-                        <label for="formGroupExampleInput" class="form-label">Postal Code</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </fieldset>
+            </form>
 
+            <!-- Card #-->
+
+            <div class="row g-3">
+                <div class="col-5">
+                    <div>
+                        <label for="Card#">Card #</label>
+                    </div>
+                    <div>
+                        <input type="text" inputmode="numeric" name="Card#" placeholder="XXXXXXXXXX">
                     </div>
                 </div>
-
-                <div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 100px"></textarea>
-                        <label for="floatingTextarea2"></label>
+                <!-- CVC #-->
+                <div class="col-3">
+                    <div>
+                        <label for="Card#">CVC#</label>
                     </div>
-                <p>Add any notes here</p>
+                    <div>
+                        <input type="text" inputmode="numeric" name="CVC#" placeholder="0000">
+                    </div>
                 </div>
+                <!-- Amount-->
+                <div class="col-4">
+                    <div>
+                        <label for="Card#">Amount</label>
+                    </div>
 
-
-
-
+                    <div>
+                        <p> $<input type="text" inputmode="numeric name=" Amount" placeholder="Amount"></p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!--Tercera caja-->
         <div class="d-flex">
-            <div>
-                <button type="button" class="btn btn-secondary align-item-end">Cancel</button>
-                <button type="button" class="btn btn-link"></button>
+            <div class="row col-5">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    <label for="formGroupExampleInput2" class="form-label">City</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+
+                    <!-- Son Left div Payment method-->
+                    <p class="m-3">We accept:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i
+                                class="fa-brands fa-cc-mastercard"></i></label>
+
+                    </div>
+                    <!-- Payment Visa-->
+
+                    <div class="form-check form-check-inline">
+                        <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                    </div>
+                    <!-- Payment Diners Club-->
+                    <div class="form-check form-check-inline">
+                        <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i
+                                class="fa-brands fa-cc-diners-club"></i></label>
+                    </div>
+
+                    <!-- Payment Paypal-->
+
+                    <div class="form-check form-check-inline">
+                        <input class="form" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-paypal"></i></label>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button type="button" class="btn btn-primary">Send</button>
-                <button type="button" class="btn btn-link"></button>
-            </div>
-        </div>
 
 
-    </div>
+            <!--Cuarta caja-->
+            <div class="row">
+                <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+
+                
+                <div class="row col-3">
+                    <div class="mb-3  ">
+                        <div class="d-flex">
+                            <div class="row col-6">
+                                <p>State</p>
+                                <select class="form-select inline" aria-label="Default select example">
+                                    <!--Select state input-->
+                                    <option selected>Pick a state</option>
+                                    <option value="1">Distrito Capital</option>
+                                    <option value="2">Anzoategui</option>
+                                    <option value="3">Sucre</option>
+                                </select>
+                            </div>
+                            <!--Postal code Input-->
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Text area-->
+
+                    <div class="d-flex">
+                        <div class="row col-12">
+                            <div class="mb-3 ">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <p>Add any notes here</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div>
+                        <button type="button" class="btn btn-secondary align-item-end">Cancel</button>
+                        <button type="button" class="btn btn-link"></button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-link"></button>
+                    </div>
+                </div>
 
 
 
 
 
-    <!-- CDN links-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+
+
+
+                <!-- CDN links-->
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+                    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+                    crossorigin="anonymous"></script>
 </body>
 
 </html>
